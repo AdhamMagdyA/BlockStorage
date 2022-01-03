@@ -65,7 +65,8 @@ int main() {
     Block block(5);
     //reading from a file
     ifstream infile("blocks.bin");
-    infile.seekg(0+sizeof(r1)+2*sizeof(block)) ;
+    // seeking to the 3rd block (from beginning of the file skip header record + 2 blocks)
+    infile.seekg(0 + sizeof(r1) + 2*sizeof(block)) ;
     infile.read( reinterpret_cast<char *>(&block), sizeof(block) );
 
     for(int i=0; i<5; i++){
