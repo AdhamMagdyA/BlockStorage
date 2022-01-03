@@ -15,7 +15,10 @@ struct Record{
 };
 
 struct Block{
-    Record record[5];
+    Record *record;
+    Block(int n){
+        record = new Record[n];
+    }
 };
 
 
