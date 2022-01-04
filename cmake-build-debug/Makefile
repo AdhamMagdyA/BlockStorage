@@ -57,10 +57,17 @@ RM = /snap/clion/178/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< Updated upstream
 CMAKE_SOURCE_DIR = /home/adham/CLionProjects/BlockStorage
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/adham/CLionProjects/BlockStorage/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /media/adham/sure?/projects/BlockStorage
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /media/adham/sure?/projects/BlockStorage/cmake-build-debug
+>>>>>>> Stashed changes
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +94,15 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< Updated upstream
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adham/CLionProjects/BlockStorage/cmake-build-debug/CMakeFiles /home/adham/CLionProjects/BlockStorage/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adham/CLionProjects/BlockStorage/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/adham/sure?/projects/BlockStorage/cmake-build-debug/CMakeFiles /media/adham/sure?/projects/BlockStorage/cmake-build-debug//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/adham/sure?/projects/BlockStorage/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : all
 
 # The main clean target

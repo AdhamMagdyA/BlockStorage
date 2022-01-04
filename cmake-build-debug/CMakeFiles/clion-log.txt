@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 /snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/adham/CLionProjects/BlockStorage
+=======
+/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/adham/sure?/projects/BlockStorage
+>>>>>>> Stashed changes
 -- The C compiler identification is GNU 9.3.0
 -- The CXX compiler identification is GNU 9.3.0
 -- Detecting C compiler ABI info
@@ -13,4 +17,8 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
+<<<<<<< Updated upstream
 -- Build files have been written to: /home/adham/CLionProjects/BlockStorage/cmake-build-debug
+=======
+-- Build files have been written to: /media/adham/sure?/projects/BlockStorage/cmake-build-debug
+>>>>>>> Stashed changes

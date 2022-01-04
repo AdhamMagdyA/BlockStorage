@@ -106,5 +106,4 @@ int main() {
     cout << GetKey("blocks.bin",1,2) << endl;
     cout << GetVal("blocks.bin",1,2) << endl;
 
-
 }
