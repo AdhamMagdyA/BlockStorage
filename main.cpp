@@ -15,11 +15,45 @@ struct Record{
 };
 
 struct Block{
-    Record record[5];
+    Record *record;
     Block(int n){
-
+        record = new Record[n];
     }
 };
+
+int GetKey(char *cIndexFile, int iBlock, int iRecord){
+    // open the file
+    ifstream indexFile(cIndexFile);
+    // define record and block to hold the data
+    Record r;
+    Block block(5);
+    // seek to the specified block
+    indexFile.seekg(0 + sizeof(r) + (iBlock-1)*sizeof(block)) ;
+    // read the specified block
+    indexFile.read( reinterpret_cast<char *>(&block), sizeof(block) );
+    // read the specified record
+    r = block.record[iRecord];
+    // return key
+    return r.iKey;
+}
+
+int GetVal(char *cIndexFile, int iBlock, int iRecord){
+    // open the file
+    ifstream indexFile(cIndexFile);
+    // define record and block to hold the data
+    Record r;
+    Block block(5);
+    // seek to the specified block
+    indexFile.seekg(0 + sizeof(r) + (iBlock-1)*sizeof(block)) ;
+    // read the specified block
+    indexFile.read( reinterpret_cast<char *>(&block), sizeof(block) );
+    // read the specified record
+    r = block.record[iRecord];
+    // return value
+    return r.iVal;
+}
+
+
 
 
 int main() {
@@ -69,9 +103,8 @@ int main() {
     infile.seekg(0 + sizeof(r1) + 2*sizeof(block)) ;
     infile.read( reinterpret_cast<char *>(&block), sizeof(block) );
 
-    for(int i=0; i<5; i++){
-        cout << block.record[i].iKey << " " << block.record[i].iVal << endl;
-    }
+    cout << GetKey("blocks.bin",1,2) << endl;
+    cout << GetVal("blocks.bin",1,2) << endl;
 
 
 }
