@@ -8,40 +8,6 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-<<<<<<< Updated upstream
-				<Option working_dir="/home/adham/CLionProjects/BlockStorage/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/adham/CLionProjects/BlockStorage/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/adham/CLionProjects/BlockStorage/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="files_assignment_2">
-				<Option output="/home/adham/CLionProjects/BlockStorage/cmake-build-debug/files_assignment_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/adham/CLionProjects/BlockStorage/cmake-build-debug"/>
-=======
 				<Option working_dir="/media/adham/sure?/projects/BlockStorage/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -74,7 +40,6 @@
 			<Target title="files_assignment_2">
 				<Option output="/media/adham/sure?/projects/BlockStorage/cmake-build-debug/files_assignment_2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/media/adham/sure?/projects/BlockStorage/cmake-build-debug"/>
->>>>>>> Stashed changes
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -88,17 +53,6 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< Updated upstream
-					<Build command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 files_assignment_2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="files_assignment_2/fast">
-				<Option output="/home/adham/CLionProjects/BlockStorage/cmake-build-debug/files_assignment_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/adham/CLionProjects/BlockStorage/cmake-build-debug"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 files_assignment_2"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -108,7 +62,6 @@
 			<Target title="files_assignment_2/fast">
 				<Option output="/media/adham/sure?/projects/BlockStorage/cmake-build-debug/files_assignment_2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/media/adham/sure?/projects/BlockStorage/cmake-build-debug"/>
->>>>>>> Stashed changes
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -122,19 +75,6 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< Updated upstream
-					<Build command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 files_assignment_2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adham/CLionProjects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-		</Build>
-		<Unit filename="/home/adham/CLionProjects/BlockStorage/main.cpp">
-			<Option target="files_assignment_2"/>
-		</Unit>
-		<Unit filename="/home/adham/CLionProjects/BlockStorage/CMakeLists.txt">
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 files_assignment_2/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/media/adham/sure?/projects/BlockStorage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -146,7 +86,6 @@
 			<Option target="files_assignment_2"/>
 		</Unit>
 		<Unit filename="/media/adham/sure?/projects/BlockStorage/CMakeLists.txt">
->>>>>>> Stashed changes
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

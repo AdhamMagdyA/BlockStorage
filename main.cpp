@@ -84,7 +84,36 @@ int GetBlockIndex (char *cIndexFile, int iToken){
     // reached end of list without finding the key
     return -1;
 }
-
+int GetRecordIndex (char *cIndexFile, int iToken){
+    // open the file
+    ifstream file(cIndexFile);
+    // read the header record
+    Record record;
+    file.read( reinterpret_cast<char *>(&record), sizeof(record) );
+    Block block(blockSize);
+    // save the next block index
+    int next = record.iKey;
+    // traversing the list of blocks
+    while (next != -1 ){
+        file.seekg(0+sizeof(record) + (next-1)*sizeof(block));
+        file.read( reinterpret_cast<char *>(&block), sizeof(block) );
+        // might the key exist in this block
+        if(block.record[0].iVal >= iToken){
+            // check if the block contains that key
+            for(int i=1; i<blockSize; i++){
+                if(block.record[i].iKey == iToken)
+                    return i;
+            }
+            // does not exist
+            return -1;
+        }else{
+            // traverse rest of the list
+            next = block.record[0].iKey;
+        }
+    }
+    // reached end of list without finding the key
+    return -1;
+}
 
 int main() {
 
@@ -136,5 +165,5 @@ int main() {
 //    cout << GetKey("blocks.bin",1,2) << endl;
 //    cout << GetVal("blocks.bin",1,2) << endl;
 
-    cout << GetBlockIndex("blocks.bin",1) << endl;
+    cout << "element in block: " << GetBlockIndex("blocks.bin",5) << " and record: " << GetRecordIndex("blocks.bin",5) << endl;
 }

@@ -54,17 +54,10 @@ RM = /snap/clion/178/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< Updated upstream
-CMAKE_SOURCE_DIR = /home/adham/CLionProjects/BlockStorage
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adham/CLionProjects/BlockStorage/cmake-build-debug
-=======
 CMAKE_SOURCE_DIR = /media/adham/sure?/projects/BlockStorage
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /media/adham/sure?/projects/BlockStorage/cmake-build-debug
->>>>>>> Stashed changes
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -88,24 +81,14 @@ clean: CMakeFiles/files_assignment_2.dir/clean
 CMakeFiles/files_assignment_2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/files_assignment_2.dir/build.make CMakeFiles/files_assignment_2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/files_assignment_2.dir/build.make CMakeFiles/files_assignment_2.dir/build
-<<<<<<< Updated upstream
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adham/CLionProjects/BlockStorage/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target files_assignment_2"
-=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adham/sure?/projects/BlockStorage/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target files_assignment_2"
->>>>>>> Stashed changes
 .PHONY : CMakeFiles/files_assignment_2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/files_assignment_2.dir/rule: cmake_check_build_system
-<<<<<<< Updated upstream
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adham/CLionProjects/BlockStorage/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/files_assignment_2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adham/CLionProjects/BlockStorage/cmake-build-debug/CMakeFiles 0
-=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/adham/sure?/projects/BlockStorage/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/files_assignment_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/adham/sure?/projects/BlockStorage/cmake-build-debug/CMakeFiles 0
->>>>>>> Stashed changes
 .PHONY : CMakeFiles/files_assignment_2.dir/rule
 
 # Convenience name for target.

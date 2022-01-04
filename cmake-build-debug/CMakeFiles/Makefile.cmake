@@ -25,10 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake"
-<<<<<<< Updated upstream
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake"
-=======
->>>>>>> Stashed changes
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindCodeBlocks.cmake"
@@ -38,10 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake"
-<<<<<<< Updated upstream
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystem.cmake.in"
-=======
->>>>>>> Stashed changes
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake"
   "/snap/clion/178/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake"
@@ -118,10 +112,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-<<<<<<< Updated upstream
   "CMakeFiles/3.21.1/CMakeSystem.cmake"
-=======
->>>>>>> Stashed changes
   "CMakeFiles/3.21.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.21.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.21.1/CMakeCCompiler.cmake"

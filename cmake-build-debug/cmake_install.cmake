@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-# Install script for directory: /home/adham/CLionProjects/BlockStorage
-=======
 # Install script for directory: /media/adham/sure?/projects/BlockStorage
->>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -54,9 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< Updated upstream
-file(WRITE "/home/adham/CLionProjects/BlockStorage/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
 file(WRITE "/media/adham/sure?/projects/BlockStorage/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
