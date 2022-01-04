@@ -114,6 +114,15 @@ int GetRecordIndex (char *cIndexFile, int iToken){
     // reached end of list without finding the key
     return -1;
 }
+int FirstEmptyBlock(char *cIndexFile){
+    // open the file
+    ifstream file(cIndexFile);
+    // read the header record
+    Record record;
+    file.read( reinterpret_cast<char *>(&record), sizeof(record) );
+    return record.iVal;
+}
+
 
 int main() {
 
@@ -166,4 +175,5 @@ int main() {
 //    cout << GetVal("blocks.bin",1,2) << endl;
 
     cout << "element in block: " << GetBlockIndex("blocks.bin",5) << " and record: " << GetRecordIndex("blocks.bin",5) << endl;
+    cout << "first empty block is at " << FirstEmptyBlock("blocks.bin");
 }
