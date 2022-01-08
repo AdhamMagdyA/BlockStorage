@@ -36,6 +36,8 @@ int GetKey(char *cIndexFile, int iBlock, int iRecord){
     // read the specified record
     r = block.record[iRecord];
     // return key
+    if(r.iKey<=0 && r.iVal<=0)
+        return -1;
     return r.iKey;
 }
 int GetVal(char *cIndexFile, int iBlock, int iRecord){
@@ -51,6 +53,8 @@ int GetVal(char *cIndexFile, int iBlock, int iRecord){
     // read the specified record
     r = block.record[iRecord];
     // return value
+    if(r.iKey<=0 && r.iVal<=0)
+        return -1;
     return r.iVal;
 }
 
@@ -631,10 +635,13 @@ int main() {
     // seeking to the 3rd block (from beginning of the file skip header record + 2 blocks)
     infile.seekg(0 + sizeof(r1) + 2*sizeof(block)) ;
     infile.read( reinterpret_cast<char *>(&block), sizeof(block) );
+    cout << "testing getKey and getVal" << endl;
+    cout << "key of second record in first block: " <<GetKey("blocks.bin",1,2) << endl;
+    cout << "value of second record in first block: " << GetVal("blocks.bin",1,2) << endl;
 
-//    cout << GetKey("blocks.bin",1,2) << endl;
-//    cout << GetVal("blocks.bin",1,2) << endl;
-
+    cout << endl << "testing getBlockIndex and getRecordIndex" << endl;
     cout << "element in block: " << GetBlockIndex("blocks.bin",5) << " and record: " << GetRecordIndex("blocks.bin",5) << endl;
+
+    cout << endl << "Testing firstEmptyBlock" << endl;
     cout << "first empty block is at " << FirstEmptyBlock("blocks.bin");
 }
