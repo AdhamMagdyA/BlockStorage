@@ -23,6 +23,30 @@ struct Block{
     }
 };
 
+bool createRecordFile(char *cIndexFile, int m, int n)
+{
+    blockSize = n;
+    ofstream myFile;
+    myFile.open(cIndexFile, ios::binary);
+    Block b(n);
+    Record r(-1,1);
+    myFile.write(reinterpret_cast<char *>(&r), sizeof(r));
+    // loop for number of blocks and insert them
+    for(int i=2; i< m+2; i++){
+        int v = -1;
+        if(i = m+1){
+            b.record[0].iKey =-1;
+            b.record[0].iVal =-1;
+        }
+        else{
+            b.record[0].iKey =i;
+            b.record[0].iVal =v;
+        }
+        myFile.write(reinterpret_cast<char *>(&b), sizeof(b));
+    }
+    myFile.close();
+    return true;
+}
 int GetKey(char *cIndexFile, int iBlock, int iRecord){
     // open the file
     ifstream indexFile(cIndexFile);
